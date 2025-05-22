@@ -1,0 +1,261 @@
+{% extends "layout.html" %}
+
+{% block title %}Settings{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="top-bar">
+        <h4>Settings</h4>
+        <div class="user-dropdown">
+            <i class="bi bi-person-circle"></i> {{ current_user.username }}
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Settings Menu</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="#account-section" class="list-group-item list-group-item-action active" data-bs-toggle="list">Account Settings</a>
+                    <a href="#notification-section" class="list-group-item list-group-item-action" data-bs-toggle="list">Notifications</a>
+                    <a href="#api-section" class="list-group-item list-group-item-action" data-bs-toggle="list">API Configuration</a>
+                    <a href="#scraping-section" class="list-group-item list-group-item-action" data-bs-toggle="list">Scraping Settings</a>
+                    <a href="#system-section" class="list-group-item list-group-item-action" data-bs-toggle="list">System</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-3 text-muted">System Status</h6>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="me-3">
+                            <span class="badge rounded-pill bg-success p-2"><i class="bi bi-check-circle"></i></span>
+                        </div>
+                        <div>
+                            <h6 class="mb-0">Twitter Scraper</h6>
+                            <small class="text-muted">Running normally</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="me-3">
+                            <span class="badge rounded-pill bg-success p-2"><i class="bi bi-check-circle"></i></span>
+                        </div>
+                        <div>
+                            <h6 class="mb-0">AI Analyzer</h6>
+                            <small class="text-muted">Running normally</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="me-3">
+                            <span class="badge rounded-pill bg-success p-2"><i class="bi bi-check-circle"></i></span>
+                        </div>
+                        <div>
+                            <h6 class="mb-0">Database</h6>
+                            <small class="text-muted">Connected</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <span class="badge rounded-pill bg-success p-2"><i class="bi bi-check-circle"></i></span>
+                        </div>
+                        <div>
+                            <h6 class="mb-0">Web Server</h6>
+                            <small class="text-muted">Running normally</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-9">
+            <div class="tab-content">
+                <!-- Account Settings Section -->
+                <div class="tab-pane fade show active" id="account-section">
+                    <div class="card mb-4">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Account Settings</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" value="{{ current_user.username }}" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" value="admin@example.com">
+                                </div>
+                                <hr>
+                                <h6>Change Password</h6>
+                                <div class="mb-3">
+                                    <label for="current-password" class="form-label">Current Password</label>
+                                    <input type="password" class="form-control" id="current-password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="new-password" class="form-label">New Password</label>
+                                    <input type="password" class="form-control" id="new-password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirm-password" class="form-label">Confirm New Password</label>
+                                    <input type="password" class="form-control" id="confirm-password">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Notification Settings Section -->
+                <div class="tab-pane fade" id="notification-section">
+                    <div class="card mb-4">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Notification Settings</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <h6 class="mb-3">Email Notifications</h6>
+                                <div class="form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" id="scam-alerts" checked>
+                                    <label class="form-check-label" for="scam-alerts">Scam Alerts</label>
+                                    <div class="form-text">Get notified when new high-risk airdrops are detected</div>
+                                </div>
+                                <div class="form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" id="new-airdrops" checked>
+                                    <label class="form-check-label" for="new-airdrops">New Verified Airdrops</label>
+                                    <div class="form-text">Get notified when new legitimate airdrops are detected</div>
+                                </div>
+                                <div class="form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" id="system-alerts" checked>
+                                    <label class="form-check-label" for="system-alerts">System Alerts</label>
+                                    <div class="form-text">Get notified about system issues or maintenance</div>
+                                </div>
+                                <div class="form-check form-switch mb-4">
+                                    <input class="form-check-input" type="checkbox" id="weekly-summary" checked>
+                                    <label class="form-check-label" for="weekly-summary">Weekly Summary</label>
+                                    <div class="form-text">Get a weekly summary of new airdrops and analysis</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- API Configuration Section -->
+                <div class="tab-pane fade" id="api-section">
+                    <div class="card mb-4">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">API Configuration</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="openrouter-api-key" class="form-label">OpenRouter API Key</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="openrouter-api-key" value="•••••••••••••••••••••••">
+                                        <button class="btn btn-outline-secondary" type="button"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                    <div class="form-text">Used for AI analysis of airdrops</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ai-model" class="form-label">Primary AI Model</label>
+                                    <select class="form-select" id="ai-model">
+                                        <option value="google/gemini-2.0-flash-exp:free" selected>Gemini 2.0 Flash (Experimental)</option>
+                                        <option value="deepseek/deepseek-r1:free">DeepSeek R1</option>
+                                        <option value="deepseek/deepseek-chat-v3-0324:free">DeepSeek Chat V3</option>
+                                        <option value="google/gemini-pro">Gemini Pro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="fallback-strategy" class="form-label">Fallback Strategy</label>
+                                    <select class="form-select" id="fallback-strategy">
+                                        <option value="try-all" selected>Try All Available Models</option>
+                                        <option value="heuristic">Use Heuristic Analysis Only</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scraping Settings Section -->
+                <div class="tab-pane fade" id="scraping-section">
+                    <div class="card mb-4">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Scraping Settings</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="scrape-interval" class="form-label">Twitter Scraping Interval (minutes)</label>
+                                    <input type="number" class="form-control" id="scrape-interval" value="15" min="5" max="60">
+                                    <div class="form-text">How often to check Twitter for new airdrops</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="search-terms" class="form-label">Search Terms</label>
+                                    <textarea class="form-control" id="search-terms" rows="3">#airdrop, #solana airdrop, free airdrop, $SOL airdrop, crypto airdrop</textarea>
+                                    <div class="form-text">Comma-separated terms to search for on Twitter</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="max-results" class="form-label">Maximum Results Per Scrape</label>
+                                    <input type="number" class="form-control" id="max-results" value="50" min="10" max="100">
+                                </div>
+                                <div class="form-check form-switch mb-4">
+                                    <input class="form-check-input" type="checkbox" id="scrape-website" checked>
+                                    <label class="form-check-label" for="scrape-website">Scrape Project Websites</label>
+                                    <div class="form-text">Extract additional information from project websites when available</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- System Settings Section -->
+                <div class="tab-pane fade" id="system-section">
+                    <div class="card mb-4">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">System Settings</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h6 class="mb-0">Database Size</h6>
+                                    <small class="text-muted">Current database size is 24.5 MB</small>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary">Optimize</button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h6 class="mb-0">Clear Old Data</h6>
+                                    <small class="text-muted">Remove airdrops older than the selected timeframe</small>
+                                </div>
+                                <select class="form-select form-select-sm" style="width: auto;">
+                                    <option value="never" selected>Never Delete</option>
+                                    <option value="3months">Older than 3 months</option>
+                                    <option value="6months">Older than 6 months</option>
+                                    <option value="1year">Older than 1 year</option>
+                                </select>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div>
+                                    <h6 class="mb-0">Export Data</h6>
+                                    <small class="text-muted">Download all airdrop data as CSV</small>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary">Export</button>
+                            </div>
+                            <hr>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-warning">Restart All Services</button>
+                                <button class="btn btn-danger">Reset to Factory Settings</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

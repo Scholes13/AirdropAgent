@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block title %}Verified Projects{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="top-bar">
+        <h4>Verified Projects</h4>
+        <div class="user-dropdown">
+            <i class="bi bi-person-circle"></i> {{ current_user.username }}
+        </div>
+    </div>
+    
+    <!-- Filters -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Filters</h5>
+                        <button class="btn btn-sm btn-outline-primary">Reset</button>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <label class="form-label">Rating (Min)</label>
+                            <select class="form-select">
+                                <option value="7.5" selected>7.5</option>
+                                <option value="8.0">8.0</option>
+                                <option value="8.5">8.5</option>
+                                <option value="9.0">9.0</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Blockchain</label>
+                            <select class="form-select">
+                                <option value="all" selected>All</option>
+                                <option value="solana">Solana</option>
+                                <option value="ethereum">Ethereum</option>
+                                <option value="bsc">BSC</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Date Added</label>
+                            <select class="form-select">
+                                <option value="all" selected>All Time</option>
+                                <option value="today">Today</option>
+                                <option value="week">This Week</option>
+                                <option value="month">This Month</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Sort By</label>
+                            <select class="form-select">
+                                <option value="rating" selected>Rating (Highest)</option>
+                                <option value="date">Date (Newest)</option>
+                                <option value="name">Name (A-Z)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Verified Projects List -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Verified Airdrops (Rating > 7.5)</h5>
+                    <span class="badge bg-success">{{ verified_projects|length }} Projects</span>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Project</th>
+                                    <th scope="col">Rating</th>
+                                    <th scope="col">Blockchain</th>
+                                    <th scope="col">Date Added</th>
+                                    <th scope="col">Key Features</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for project in verified_projects %}
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="project-icon me-3">
+                                                <i class="bi bi-check-circle-fill text-success"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">{{ project.project_name }}</h6>
+                                                <small class="text-muted">@{{ project.twitter_user }}</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-success">{{ project.rating|round(1) }}/10</span>
+                                    </td>
+                                    <td>{{ project.blockchain|default('Unknown') }}</td>
+                                    <td>{{ project.created_at.strftime('%Y-%m-%d') }}</td>
+                                    <td>
+                                        <span class="badge bg-light text-dark me-1">Documentation</span>
+                                        <span class="badge bg-light text-dark me-1">Audit</span>
+                                        <span class="badge bg-light text-dark">Team KYC</span>
+                                    </td>
+                                    <td>
+                                        <a href="{{ url_for('view_airdrop', airdrop_id=project.id) }}" class="btn btn-sm btn-outline-primary">
+                                            <i class="bi bi-eye"></i> View
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                                
+                                {% if not verified_projects %}
+                                <tr>
+                                    <td colspan="6" class="text-center py-4">
+                                        <div class="empty-state">
+                                            <i class="bi bi-search fs-1 text-muted"></i>
+                                            <p class="mt-2">No verified projects found</p>
+                                            <small class="text-muted">Try adjusting your filters or check back later</small>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

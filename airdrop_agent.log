@@ -1,0 +1,161 @@
+2025-05-22 01:25:57,391 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 01:25:57.391874
+2025-05-22 01:25:57,392 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 01:25:57,392 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 01:25:57,392 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 01:25:58,241 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 01:25:58,241 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 01:29:45,757 - AirdropAgent - INFO - AirdropAgent stopped by user
+2025-05-22 01:35:24,976 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 01:35:24.976756
+2025-05-22 01:35:24,977 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 01:35:24,978 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 01:35:24,979 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 01:35:25,828 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 01:35:25,828 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 01:35:26,068 - httpx - INFO - HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-05-22 01:35:26,270 - httpx - INFO - HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.3fdf738a.js "HTTP/1.1 200 OK"
+2025-05-22 01:35:26,550 - httpx - INFO - HTTP Request: POST https://api.x.com/1.1/guest/activate.json "HTTP/1.1 200 OK"
+2025-05-22 01:35:26,842 - httpx - INFO - HTTP Request: POST https://api.x.com/1.1/onboarding/task.json?flow_name=login "HTTP/1.1 200 OK"
+2025-05-22 01:35:27,073 - httpx - INFO - HTTP Request: POST https://api.x.com/1.1/onboarding/sso_init.json "HTTP/1.1 200 OK"
+2025-05-22 01:35:27,420 - httpx - INFO - HTTP Request: GET https://twitter.com/i/js_inst?c_name=ui_metrics "HTTP/1.1 200 OK"
+2025-05-22 01:35:28,101 - httpx - INFO - HTTP Request: POST https://api.x.com/1.1/onboarding/task.json "HTTP/1.1 200 OK"
+2025-05-22 01:35:28,536 - httpx - INFO - HTTP Request: POST https://api.x.com/1.1/onboarding/task.json "HTTP/1.1 200 OK"
+2025-05-22 01:35:29,087 - httpx - INFO - HTTP Request: POST https://api.x.com/1.1/onboarding/task.json "HTTP/1.1 200 OK"
+2025-05-22 01:35:29,345 - httpx - INFO - HTTP Request: POST https://api.x.com/1.1/onboarding/task.json "HTTP/1.1 200 OK"
+2025-05-22 01:35:29,711 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-05-22 01:37:30,028 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:37:30] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-22 01:37:30,082 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:37:30] "GET /login HTTP/1.1" 200 -
+2025-05-22 01:37:32,616 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:37:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-22 01:37:37,213 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:37:37] "POST /login HTTP/1.1" 200 -
+2025-05-22 01:37:45,458 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:37:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-22 01:37:45,514 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:37:45] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 01:37:51,761 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:37:51] "GET /airdrop/2 HTTP/1.1" 200 -
+2025-05-22 01:37:54,293 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:37:54] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 01:38:50,586 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:38:50] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 01:38:54,250 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:38:54] "GET /airdrop/1 HTTP/1.1" 200 -
+2025-05-22 01:39:34,236 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:39:34] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 01:47:57,128 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 01:47:57.128374
+2025-05-22 01:47:57,129 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 01:47:57,129 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 01:47:57,130 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 01:47:57,980 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 01:47:57,980 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 01:47:58,405 - httpx - INFO - HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-05-22 01:47:58,738 - httpx - INFO - HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.3fdf738a.js "HTTP/1.1 200 OK"
+2025-05-22 01:47:59,372 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-05-22 01:49:00,203 - AirdropAgent - INFO - AirdropAgent stopped by user
+2025-05-22 01:52:40,785 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 01:52:40.784976
+2025-05-22 01:52:40,785 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 01:52:40,786 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 01:52:40,787 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 01:52:41,635 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 01:52:41,636 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 01:52:41,790 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:52:41] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-05-22 01:52:41,818 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:52:41] "GET /login?next=/dashboard HTTP/1.1" 200 -
+2025-05-22 01:52:41,908 - httpx - INFO - HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-05-22 01:52:42,248 - httpx - INFO - HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.3fdf738a.js "HTTP/1.1 200 OK"
+2025-05-22 01:52:42,703 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-05-22 01:54:16,121 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 01:54:16.121423
+2025-05-22 01:54:16,122 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 01:54:16,122 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 01:54:16,123 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 01:54:16,967 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 01:54:16,967 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 01:54:17,288 - httpx - INFO - HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-05-22 01:54:17,605 - httpx - INFO - HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.3fdf738a.js "HTTP/1.1 200 OK"
+2025-05-22 01:54:17,981 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-05-22 01:56:30,794 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 01:56:30.794678
+2025-05-22 01:56:30,795 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 01:56:30,795 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 01:56:30,796 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 01:56:31,639 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 01:56:31,639 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 01:56:31,858 - httpx - INFO - HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-05-22 01:56:32,190 - httpx - INFO - HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.3fdf738a.js "HTTP/1.1 200 OK"
+2025-05-22 01:56:32,633 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-05-22 01:57:35,488 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:57:35] "POST /login HTTP/1.1" 200 -
+2025-05-22 01:57:39,892 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:57:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-22 01:57:39,925 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:57:39] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 01:57:52,538 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:57:52] "GET /airdrop/16 HTTP/1.1" 200 -
+2025-05-22 01:58:04,623 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:58:04] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 01:58:12,324 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:58:12] "GET /airdrop/17 HTTP/1.1" 200 -
+2025-05-22 01:58:14,446 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:58:14] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 01:58:19,320 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:58:19] "GET /airdrop/4 HTTP/1.1" 200 -
+2025-05-22 01:58:31,457 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:58:31] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 01:59:45,416 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 01:59:45] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:01:32,747 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:01:32] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:03:51,850 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:03:51] "GET /airdrop/19 HTTP/1.1" 200 -
+2025-05-22 02:04:02,554 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:02] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:04:04,247 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:04] "GET /airdrop/18 HTTP/1.1" 200 -
+2025-05-22 02:04:08,989 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:08] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:04:11,337 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:11] "GET /airdrop/17 HTTP/1.1" 200 -
+2025-05-22 02:04:13,703 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:13] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:04:15,467 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:15] "GET /airdrop/12 HTTP/1.1" 200 -
+2025-05-22 02:04:17,468 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:17] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:04:19,442 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:19] "GET /airdrop/12 HTTP/1.1" 200 -
+2025-05-22 02:04:21,086 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:21] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:04:35,567 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:04:35] "GET /airdrop/4 HTTP/1.1" 200 -
+2025-05-22 02:06:47,027 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 02:06:47.027690
+2025-05-22 02:06:47,028 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 02:06:47,028 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 02:06:47,029 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 02:06:47,874 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 02:06:47,874 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 02:06:48,235 - httpx - INFO - HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-05-22 02:06:48,546 - httpx - INFO - HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.3fdf738a.js "HTTP/1.1 200 OK"
+2025-05-22 02:06:49,021 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-05-22 02:13:45,296 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:13:45] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:18:57,241 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 02:18:57.241763
+2025-05-22 02:18:57,242 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 02:18:57,242 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 02:18:57,244 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 02:18:58,095 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 02:18:58,096 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 02:18:58,402 - httpx - INFO - HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-05-22 02:18:58,725 - httpx - INFO - HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.3fdf738a.js "HTTP/1.1 200 OK"
+2025-05-22 02:18:59,159 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-05-22 02:19:47,553 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:19:47] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:19:55,885 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:19:55] "GET /airdrop/20 HTTP/1.1" 200 -
+2025-05-22 02:20:05,818 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:20:05] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:25:59,967 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-05-22 02:28:40,856 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:28:40] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:28:59,582 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:28:59] "GET /airdrop/27 HTTP/1.1" 200 -
+2025-05-22 02:29:06,669 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:29:06] "GET /dashboard HTTP/1.1" 200 -
+2025-05-22 02:29:20,390 - AirdropAgent - INFO - AirdropAgent stopped by user
+2025-05-22 02:30:29,083 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:30:29] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-05-22 02:30:29,388 - werkzeug - INFO - 127.0.0.1 - - [22/May/2025 02:30:29] "GET /login?next=/dashboard HTTP/1.1" 200 -
+2025-05-22 02:38:54,527 - AirdropAgent - INFO - AirdropAgent starting at 2025-05-22 02:38:54.527402
+2025-05-22 02:38:54,528 - AirdropAgent - INFO - Starting web server on 0.0.0.0:5000
+2025-05-22 02:38:54,528 - AirdropAgent - INFO - Starting watchdog
+2025-05-22 02:38:54,529 - AirdropAgent - INFO - Starting Twitter monitor
+2025-05-22 02:38:55,375 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-05-22 02:38:55,375 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-22 02:38:55,695 - httpx - INFO - HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-05-22 02:38:56,007 - httpx - INFO - HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.3fdf738a.js "HTTP/1.1 200 OK"
+2025-05-22 02:38:56,226 - httpx - INFO - HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22%23airdrop%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
